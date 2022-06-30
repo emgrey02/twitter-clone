@@ -1,0 +1,20 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon server.js"
+	},
+	"keywords": [],
+	"author": "Emma Grey <emgrey02@gmail.com> (https://github.com/emgrey02)",
+	"license": "MIT",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"mongodb": "^4.7.0",
+		"mongoose": "^6.4.1",
+		"nodemon": "^2.0.18"
+	}
+}
