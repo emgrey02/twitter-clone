@@ -1,9 +1,12 @@
 {
-	"source": ["tokens/**/*.json"],
+	"source": ["tokens/transformed-tokens.json"],
 	"platforms": {
 		"scss": {
 			"transformGroup": "scss",
-			"buildPath": "build/",
+			"options": {
+				"outputReferences": "true"
+			},
+			"buildPath": "src/",
 			"files": [
 				{
 					"destination": "scss/_variables.scss",
