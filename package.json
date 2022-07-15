@@ -11,6 +11,7 @@
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.3.0",
 		"react-scripts": "5.0.1",
+		"sass": "^1.53.0",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
@@ -19,7 +20,7 @@
 		"server": "nodemon server/server.js",
 		"dev": "concurrently \"npm run client\" \"npm run server\"",
 		"styles": "node build-styles.js",
-		"transform": "node node_modules/token-transformer tokens/tokens.json tokens/transformed-tokens.json --expandTypography=true",
+		"transform": "node node_modules/token-transformer tokens/tokens.json tokens/transformed-tokens.json --expandTypography=true --resolveReferences=false",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
@@ -44,8 +45,6 @@
 	},
 	"devDependencies": {
 		"concurrently": "^7.2.2",
-		"nodemon": "^2.0.19",
-		"style-dictionary": "^3.7.1",
-		"token-transformer": "^0.0.24"
+		"nodemon": "^2.0.19"
 	}
 }
